@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown to 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/cyborg.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="loading">
+      <img src="assets/cyborg.png" alt="favicon" />
+    </div>
+
+    <script>
+      // loading
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loading");
+
+        loader.className += " hidden";
+      });
+    </script>
+
+    <header>
+      <a href="#" class="logo">drinkwater_tech</a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <img src="assets/curve1.png" alt="curve" class="wave" />
+
+      <div class="contentBx">
+        <h2>Countdown 2021</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          amet! Eligendi atque dignissimos nisi quasi odio sequi deleniti
+          dolorum ea, totam exercitationem ut accusantium esse, dolor voluptate
+          tenetur necessitatibus magnam!
+        </p>
+
+        <div class="countdown">
+          <div class="time">
+            <div id="day"></div>
+            <span>Days</span>
+          </div>
+          <div class="time">
+            <div id="hour"></div>
+            <span>Hours</span>
+          </div>
+          <div class="time">
+            <div id="minute"></div>
+            <span>Minutes</span>
+          </div>
+          <div class="time">
+            <div id="second"></div>
+            <span>Seconds</span>
+          </div>
+        </div>
+
+        <a href="#" onclick="toggle()">Notify Me!</a>
+      </div>
+
+      <div class="imgBx">
+        <img src="assets/robotman.png" alt="man" />
+      </div>
+
+      <ul class="sci">
+        <li><img src="assets/love.svg" alt="love" /></li>
+        <li><img src="assets/death.svg" alt="death" /></li>
+        <li><img src="assets/robot.svg" alt="robot" /></li>
+      </ul>
+    </section>
+
+    <div class="newsletter">
+      <h2>Stay in Touch</h2>
+      <p>Get notified it's 2020</p>
+      <div class="inputBox">
+        <form action="">
+          <input
+            type="email"
+            name=""
+            placeholder="Enter Email Address"
+            id=""
+            required
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <img src="assets/close.png" class="close" onclick="toggle()" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
