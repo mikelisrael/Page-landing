@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "icon" href="assets/joker-icon.png"/>
+  </head>
+  <body>
+    <div class="loading">
+      <span data-text="JOKER">JOKER</span>
+    </div>
+
+    <script>
+      // loading
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loading");
+
+        loader.className += " hidden";
+      });
+    </script>
+
+    <header>
+      <a href="#" class="logo"><img src="assets/logo.png" alt="logo" /></a>
+      <div class="toggle"><img src="assets/toggle.png" /></div>
+    </header>
+
+    <div class="banner">
+      <div class="content">
+        <h2>Put on a <span>Happy</span> face</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sit,
+          illum est perspiciatis numquam blanditiis perferendis ratione dolore
+          porro nam, fugit ipsam eius rem architecto autem debitis similique a
+          unde.
+        </p>
+        <a href="#" class="play" onclick="toggle()"
+          ><img src="assets/play.png" alt="play" />Watch Trailer</a
+        >
+        <div class="slide"></div>
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="assets/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/instagram.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/twitter.png" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="trailer">
+      <video src="assets/trailer.mp4" controls="true"></video>
+      <img class="close" src="assets/close.png" onclick="toggle()" />
+    </div>
+
+    <script>
+      const toggle = () => {
+        const trailer = document.querySelector(".trailer");
+        const video = document.querySelector("video");
+
+        trailer.classList.toggle("active");
+        video.currentTime = 0;
+        video.pause();
+      };
+    </script>
+  </body>
+</html>

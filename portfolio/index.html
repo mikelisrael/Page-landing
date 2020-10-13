@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="loading wave">
+      <span style="--c: 1">L</span>
+      <span style="--c: 2">o</span>
+      <span style="--c: 3">a</span>
+      <span style="--c: 4">d</span>
+      <span style="--c: 5">i</span>
+      <span style="--c: 6">n</span>
+      <span style="--c: 7">g</span>
+      <span style="--c: 8">.</span>
+      <span style="--c: 9">.</span>
+      <span style="--c: 10">.</span>
+    </div>
+
+    <script>
+      // loading
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loading");
+
+        loader.className += " hidden";
+      });
+    </script>
+
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo"><img src="assets/logo.png" alt="" /></a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+
+      <div class="content">
+        <h2>Hello World, <br />I'm <span>Michael Israel</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          laudantium quisquam officia libero voluptates! Debitis explicabo non
+          at earum, saepe harum ex. Dolor deleniti reprehenderit dicta odit
+          recusandae cumque omnis?
+        </p>
+        <a href="#">Know more</a>
+      </div>
+
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="assets/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/linkedin.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const toggle = () => {
+        const sec = document.getElementById("sec");
+        const nav = document.getElementById("navigation");
+
+        sec.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
