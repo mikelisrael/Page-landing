@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body" id="sec">
+      <section class="header">
+        <a href="#" class="logo"><h2>Travel</h2></a>
+        <div class="toggle"><img src="assets/toggle.png" alt="" /></div>
+      </section>
+
+      <section class="banner">
+        <img src="assets/banner.jpg" class="fitBg" />
+        <div class="content">
+          <h2>Explore The World</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ab
+            sint, beatae quo laborum quibusdam dignissimos veniam voluptates,
+            voluptatem ratione, excepturi odit repellat sapiente exercitationem
+            culpa obcaecati sit eum dolorem?
+          </p>
+          <a href="#about" class="btn">Learn more</a>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="contentBx">
+          <h2 class="titleText">Feel the Beauty of the World</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe
+            deleniti temporibus excepturi voluptas incidunt blanditiis.
+            Reiciendis hic, aliquid delectus nam amet voluptate fugit suscipit.
+            Reprehenderit, voluptatibus illum! Corporis, ratione? <br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+            officia nihil, sapiente delectus rem labore ex a accusamus
+            distinctio temporibus qui fuga aspernatur nesciunt veniam recusandae
+            facere magni sit totam?
+          </p>
+          <a href="#popular" class="btn">Popular Destinations</a>
+        </div>
+
+        <div class="imgBx">
+          <img src="assets/img1.jpg" class="fitBg" />
+        </div>
+      </section>
+
+      <section class="banner2">
+        <img src="assets/banner2.jpg" class="fitBg" />
+      </section>
+
+      <section class="destination" id="popular">
+        <div class="conetnt">
+          <h2 class="titleText">
+            Most Popular Travel Destinations in the World
+          </h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe
+            deleniti temporibus excepturi voluptas incidunt blanditiis.
+            Reiciendis hic, aliquid delectus nam amet voluptate fugit suscipit.
+            Reprehenderit, voluptatibus illum! Corporis, ratione? Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Alias officia nihil,
+            sapiente delectus rem labore ex a accusamus distinctio temporibus
+            qui fuga aspernatur nesciunt veniam recusandae facere magni sit
+            totam?
+          </p>
+        </div>
+
+        <div class="destinationList">
+          <div class="box">
+            <div class="imgBx">
+              <img src="assets/destination1.jpg" class="fitBg" />
+            </div>
+            <div class="content">
+              <h2>Destination One <br /><span>Austrailia</span></h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="imgBx">
+              <img src="assets/destination2.jpg" class="fitBg" />
+            </div>
+            <div class="content">
+              <h2>Destination Two<br /><span>Sahara</span></h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="imgBx">
+              <img src="assets/destination3.jpg" class="fitBg" />
+            </div>
+            <div class="content">
+              <h2>Destination Three <br /><span>Nigeria</span></h2>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">View More</a>
+      </section>
+
+      <section class="banner3">
+        <img src="assets/banner3.jpg" alt="" class="fitBg" />
+      </section>
+
+      <section class="footer" id="footer">
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="assets/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/instagram.png" /></a>
+          </li>
+        </ul>
+
+        <h4 class="copyrightText">
+          Copyright &copy;2020 <a href="../michael israel/index.html" target="_blank">Michael Israel</a>. All rights
+          reserved
+        </h4>
+      </section>
+    </div>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="#" onclick="toggle()">Home</a></li>
+        <li><a href="#about" onclick="toggle()">About</a></li>
+        <li><a href="#popular" onclick="toggle()">Destinations</a></li>
+        <li><a href="#footer" onclick="toggle()">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      var menu = document.querySelector(".toggle");
+      var nav = document.getElementById("navigation");
+
+      function toggle() {
+        var sec = document.getElementById("sec");
+        sec.classList.toggle("active");
+
+        nav.classList.toggle("active");
+      }
+
+      menu.addEventListener("click", toggle);
+    </script>
+  </body>
+</html>
